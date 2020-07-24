@@ -6,17 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
+      /* adding style contents in the h1 tag in main section */
       h1 {
         background-color: goldenrod;
-        font-weight: 500px;
+        font-weight: 300;
+      }
+      /* styles the main section */
+      main {
+        display: flex;
+        justify-content: center;
+        background-color: gray;
+        font-size: 30px;
+        border: 5px white solid;
+      }
+      /* styles the entire window */
+      body {
+        background-color: black;
+      }
+
+      /* styles all elements with p tags */
+      p {
+        border: solid 5px white;
+        font-size: 20px;
       }
     </style>
   </head>
   <body>
     <header></header>
+
     <main>
       <h1>Class 1 lab</h1>
     </main>
+
     <footer></footer>
     <script>
       // question 1
@@ -28,8 +49,9 @@
 
       alert("Beinvenido " + quest1 + ", mi casa es tu casa!");
 
+      // writing paragraphs to window with the user's info
       document.write(
-        "<p>Que onda?! Soy Brian. What's your nombre esse? <br>This esse's name is " +
+        "<p style='background-color:goldenrod;color:black;'>Que onda?! Soy Brian. What's your nombre esse? <br>This esse's name is " +
           quest1 +
           "..." +
           "</p>"
@@ -48,8 +70,10 @@
           quest1 +
           ", I like all three at once. I call it Tachuritto!"
       );
+
+      // writing paragraphs to window with the user's info
       document.write(
-        "<p> Ayy... " +
+        "<p style='background-color:grey;color:black;'> Ayy... " +
           quest1 +
           ", pick one: tacos, burritos or chalupas? <br> Senior " +
           quest1 +
@@ -68,8 +92,9 @@
 
       alert(quest3 + " looks more like a chihuahua holmes.");
 
+      // writing paragraphs to window with the user's info
       document.write(
-        "<p> Ok " +
+        "<p style='background-color:blue;color:white;'> Ok " +
           quest1 +
           ", what is your pet's name? <br>" +
           quest1 +
@@ -82,7 +107,7 @@
 
       var quest4 = prompt(
         quest1 +
-          ", one imortant question... Do you like maragritas or cornonas?"
+          ", one important question... Do you like maragritas or coronas?"
       );
 
       // logging users saved response
@@ -100,14 +125,15 @@
           " while getting caught in the rain."
       );
 
+      // writing paragraphs to window with the user's info
       document.write(
-        "<p>" +
+        "<p style='background-color:red;color:green;'>" +
           quest1 +
           ", one important question... Do you like maragritas or cornonas? <br> " +
           quest1 +
           " likes " +
           quest4 +
-          " only on wine wendesday's though. <p>"
+          " only on wine Wendesday's though. <p>"
       );
     </script>
   </body>
