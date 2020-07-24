@@ -19,17 +19,28 @@
     </main>
     <footer></footer>
     <script>
+      // question 1
+
       var quest1 = prompt("Que onda?! Soy Brian. What's your nombre esse?");
 
-      console.log("User\s name is " + quest1);
+      // logging users saved response
+      console.log("User's name is " + quest1);
 
       alert("Beinvenido " + quest1 + ", mi casa es tu casa!");
 
-      document.write("<p>This esse\s name is " + quest1 + "..." + "</p>");
+      document.write(
+        "<p>Que onda?! Soy Brian. What's your nombre esse? <br>This esse's name is " +
+          quest1 +
+          "..." +
+          "</p>"
+      );
+
+      // question 2
 
       var quest2 = prompt(
         "Ayy... " + quest1 + ", pick one: tacos, burritos or chalupas?"
       );
+      // logging users saved response
       console.log("User chose " + quest2);
       alert(
         quest2 +
@@ -38,18 +49,65 @@
           ", I like all three at once. I call it Tachuritto!"
       );
       document.write(
-        "<p>Senior " +
+        "<p> Ayy... " +
           quest1 +
-          "\s" +
+          ", pick one: tacos, burritos or chalupas? <br> Senior " +
+          quest1 +
+          "'s" +
           " favorite Taqi Saki flavor is " +
           quest2 +
           " vodka...</p>"
       );
-      var quest3 = prompt("Ok " + quest1 + ", what is your pet\s name?");
-      console.log("User\s pet is named " + quest2 + "...");
+
+      // question 3
+
+      var quest3 = prompt("Ok " + quest1 + ", what is your pet's name?");
+
+      // logging users saved response
+      console.log("User's pet is named " + quest2 + "...");
+
       alert(quest3 + " looks more like a chihuahua holmes.");
+
       document.write(
-        "<p>" + quest1 + " has a chihuahua named  " + quest3 + "..."
+        "<p> Ok " +
+          quest1 +
+          ", what is your pet's name? <br>" +
+          quest1 +
+          " has a chihuahua named  " +
+          quest3 +
+          "..."
+      );
+
+      // question 4
+
+      var quest4 = prompt(
+        quest1 +
+          ", one imortant question... Do you like maragritas or cornonas?"
+      );
+
+      // logging users saved response
+      console.log("User's drink of choice is  " + quest4 + "...");
+
+      alert(
+        "From my understanding " +
+          quest1 +
+          " you somewhat stated that you like " +
+          quest2 +
+          " and you like sippin " +
+          quest4 +
+          " with " +
+          quest3 +
+          " while getting caught in the rain."
+      );
+
+      document.write(
+        "<p>" +
+          quest1 +
+          ", one important question... Do you like maragritas or cornonas? <br> " +
+          quest1 +
+          " likes " +
+          quest4 +
+          " only on wine wendesday's though. <p>"
       );
     </script>
   </body>
